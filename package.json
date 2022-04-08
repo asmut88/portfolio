@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My web developer portfolio",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "mern",
+    "fullstack",
+    "portfolio",
+    "react",
+    "backend"
+  ],
+  "author": "Tishbayev Askhat <asmut88@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.1.0",
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.9",
+    "nodemon": "^2.0.15"
+  }
+}
